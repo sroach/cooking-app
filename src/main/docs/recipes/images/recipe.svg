@@ -1,0 +1,16 @@
+<svg width="1050" height="1600" viewBox="0 0 1050 1600"
+     version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <style>
+        .big {
+
+        }
+    </style>
+    <text x="550" y="800" text-anchor="middle"  style="writing-mode: tb; glyph-orientation-vertical: 0; font-size:50; font-family: cursive; stroke     : #000000;
+                 fill       : #00ff00;">
+        <tspan x="550" dy="10">Guyanese</tspan>
+        <tspan x="550" dy="50">Recipes</tspan>
+    </text>
+
+</svg>
