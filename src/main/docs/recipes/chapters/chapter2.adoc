@@ -1,0 +1,55 @@
+= Thanksgiving
+:author: Steve D Roach
+
+== Sausage Stuffing
+
+[recipe,"sausage stuffing"]
+----
+recipe {
+    title = "Sausage Stuffing &#x1F356;"
+
+    step {
+        title = "Ingredients"
+        +"2 packs ground maple sausage"
+        +"1/2 teaspoon oil"
+        +"1/4 cup pine nuts, or any nut you like"
+        +"1 stick butter"
+        +"1 package stuffing mix"
+        +"1 cup chicken stock"
+        +"1 white onion white onion diced"
+    }
+    instruction {
+        +"On stove top heat large skillet pan. Place oil in the pan."
+        +"Add sausage to the pan let it start to brown"
+        +"Add diced onion to the sausage mix, let it soften"
+        +"Add the nuts to the pan and stir"
+        +"Add the stuffing mix, butter and chicken stock to the pan and mix vigorously"
+        +"Cook for another 4-5 minutes and turn off the stove."
+        +"Place the stuffing in a serving dish and cover to retain heat."
+    }
+}
+----
+
+== Stuffing
+
+[recipe,"stuffing"]
+----
+recipe {
+    title = "Stuffing &#x1F342;"
+
+    step {
+        title = "Ingredients"
+        +"1/4 cup pine nuts, or any nut you like"
+        +"1 stick butter"
+        +"1 package stuffing mix"
+        +"1 cup chicken stock or amount recommended for stuffing mix"
+    }
+    instruction {
+        +"On stove top add chicken stock to the pot."
+        +"Once stock is hot, add the stuffing mix, butter and mix vigorously."
+        +"Cook for another 1-2 minutes and turn off the stove."
+        +"Place the stuffing in a serving dish and cover to retain heat."
+    }
+}
+----
+

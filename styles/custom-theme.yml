@@ -1,0 +1,49 @@
+font:
+  catalog:
+    merge: true
+    NotoSerif:
+      normal: NotoSerif-Regular.ttf
+      italic: NotoSerif-Italic.ttf
+      bold: NotoSerif-Bold.ttf
+      bold_italic: NotoSerif-BoldItalic.ttf
+    NotoSans:
+      normal: NotoSans-Regular.ttf
+      italic: NotoSans-Italic.ttf
+      bold: NotoSans-Bold.ttf
+      bold_italic: NotoSans-BoldItalic.ttf
+    Emoji:
+      normal: BabelStoneFlags.ttf
+page:
+  layout: portrait
+  margin: [2cm,2cm,2cm,2cm]
+  size: a4
+base:
+  font_color: #333333
+  font_family: NotoSerif
+  font_size: 10
+  line_height_length: 12
+  line_height: $base_line_height_length / $base_font_size
+vertical_spacing: $base_line_height_length
+heading:
+  font_color: #93c54b
+  font_size: 12
+  font_family: NotoSans
+  font_style: normal
+  line_height: 1.2
+  margin_bottom: $vertical_spacing
+  h1_font_size: $base_font_size * 1.7
+  h2_font_size: $base_font_size * 1.5
+  h3_font_size: $base_font_size * 1.2
+  h4_font_size: $base_font_size * 1.1
+  h5_font_size: $base_font_size * 1.0
+h3_font_style: bold
+h4_font_style: bold
+h5_font_style: bold
+
+
+link:
+  font_color: #002FA7
+outline_list:
+  indent: $base_font_size * 1.5
+code:
+  font_size:10

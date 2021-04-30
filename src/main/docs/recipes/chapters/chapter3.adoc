@@ -1,0 +1,42 @@
+= Guyanese-Chinese Food &#x1F961;
+:author: Steve D Roach
+
+== Beef Chow Mein
+
+[recipe,"beef chow mein"]
+----
+recipe {
+    title = "Beef Chow Mein"
+
+    step {
+        title = "Ingredients"
+        +"1 packs chowmein, I use Champion brand"
+        +"1/2 lb beef"
+        +"1/2 onion chopped"
+        +"4 garlic cloves"
+        +"piece of ginger"
+        +"hoisin sauce"
+        +"1 tablespoon oil"
+        +"fresh chili peppers"
+        +"some scallions"
+        +"1 tbsp soy sauce"
+    }
+    step {
+        title="Prep Beef"
+        +"Cut beef into small pieces, wash with lemon/lime juice or vinegar, season beef with salt and black pepper"
+        +"Place wok or pan on stove medium heat, add oil, when oil is hot add the beef, when water is completely dried, add about an inch of water into pan to cook the beef until tender. Cook until water is completely evaporated."
+    }
+    instruction {
+        +"In a pot boil some water, when boiling add chow mein, cookx for about 8 minutes."
+        +"Strain noodles when cooked"
+        +"Cut up onion, finely chop ginger"
+        +"Add the onion, garlic, ginger and chillis to the beef and stir. Reduce the stove to low heat."
+        +"Add the chow mein noodles to the pan."
+        +"Add soy sauce, hoisin sauce and salt for taste, cook for another 2 minutes."
+        +"Turn off the stove and let it cook in the heat."
+        +"Garnish with chopped scallions"
+    }
+}
+----
+
+

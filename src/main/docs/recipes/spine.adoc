@@ -1,0 +1,43 @@
+= 🇬🇾 Guyanese Recipes 🇬🇾
+Steve D Roach <sroachst@gmail.com>; Ailani Maiah Roach <roach.ailani@icloud.com>
+:doctype: book
+:creator: {author}
+:producer: Steve Delon Roach
+:keywords: Food Recipe Guyanese
+:copyright: Steve Roach
+:toc: middle
+:toclevels: 3
+:title-page:
+:icons: font
+:nofooter:
+:sectnums:
+:sectnumlevels: 3
+:stylesdir: ../styles
+:stylesheet: foundation-travelers.css
+:source-highlighter: rouge
+:front-cover-image: image:frontcover.png[Front Cover,1050,1600]
+:leveloffset: 1
+:data-uri:
+:stem:
+:math:
+
+
+//add following line if you want to create a .mobi file (or set it in pom.xml)
+//:ebook-format: kf8
+[[intro]]
+include::intro.adoc[]
+
+[preface]
+include::chapters/preface.adoc[]
+
+[[chapter1]]
+include::chapters/chapter1.adoc[]
+
+[[chapter2]]
+include::chapters/chapter2.adoc[thanksgiving]
+
+[[chapter3]]
+include::chapters/chapter3.adoc[chinese]
+
+[[chapter4]]
+include::chapters/chapter4.adoc[curries]

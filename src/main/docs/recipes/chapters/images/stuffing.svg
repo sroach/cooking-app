@@ -1,0 +1,93 @@
+<svg
+                    width="600" height="376"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+                <style>
+
+                    .title {
+                        font-size: 36px;
+                        font-weight: bold;
+                        fill: #ffffff;
+                    }
+
+                    .ingredients_title {
+                        font-size: 20px;
+                        font-weight: bold;
+                        fill: #D62229;
+                    }
+
+                    .ingredient {
+                        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+                        font-size: 10px;
+                        font-weight: bold;
+                        fill: #222;
+                    }
+            
+                    .ingredient_list {
+                        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+                    }
+
+
+                    .back {
+                        fill: none;
+                        stroke-width: 12px;
+                        stroke: #D62229;
+                        stroke-dasharray: 10 10;
+                    }
+
+                    .subHead {
+                        font: bold 14px "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+                        fill: #E97639;
+                    }
+
+                    .title_back {
+                        fill: #7b3900;
+                        background-image: linear-gradient(to top, #80001e 0%, white 100%);
+                    }
+                    .bullet{
+                        fill: #D62229;
+                    }
+                </style>
+                <defs>
+                    <filter id="filter" x="0" y="0" width="200" height="200" >
+                        <feOffset result="offOut" in="SourceAlpha" dx="2" dy="3"/>
+                        <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+                                       values=" 0.37 0 0 0 0 0 0.36 0 0 0 0 0 0.36 0 0 0 0 0 0.5 0"/>
+                        <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="3"/>
+                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+                    </filter>
+
+
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0">
+                        <stop offset="0%" style="stop-color:#33235b;"/>
+                        <stop offset="25%" style="stop-color:#D62229;"/>
+                        <stop offset="50%" style="stop-color:#E97639;"/>
+                        <stop offset="75%" style="stop-color:#792042;"/>
+                        <stop offset="100%" style="stop-color:#33235b;"/>
+                    </linearGradient>
+                    <pattern id="pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="150%" height="100%" fill="url(#gradient)">
+                            <animate attributeType="XML"
+                                     attributeName="x"
+                                     from="0" to="150%"
+                                     dur="7s"
+                                     repeatCount="indefinite"/>
+                        </rect>
+                        <rect x="-150%" y="0" width="150%" height="100%" fill="url(#gradient)">
+                            <animate attributeType="XML"
+                                     attributeName="x"
+                                     from="-150%" to="0"
+                                     dur="7s"
+                                     repeatCount="indefinite"/>
+                        </rect>
+                    </pattern>
+                </defs>
+
+                <rect width="100%" height="100%" class="back" rx="10" ry="10"/>
+                <rect x="10" y="10" width="580" height="50" fill="url(#gradient)" rx="5" ry="5"/>
+                <text x="290" y="45" text-anchor="middle" class="title" fill="url(#pattern)">Stuffing &#x1F342;</text>
+               
+                <rect x="10" y="70" width="580" height="276" fill="#ffffff" rx="15" fill-opacity="0.8" filter="url(#filter)"/>
+                <text x="290" y="100" class="ingredients_title" text-anchor="middle">Ingredients</text><text x="20" y="130" class="subHead">Ingredients</text><text y="142" class="ingredient_list"><tspan class="ingredient" x="20" dy="14"><tspan class="bullet">&#x2611;</tspan> 1/4 cup pine nuts, or any nut you like </tspan><tspan class="ingredient" x="20" dy="14"><tspan class="bullet">&#x2611;</tspan> 1 stick butter </tspan><tspan class="ingredient" x="20" dy="14"><tspan class="bullet">&#x2611;</tspan> 1 package stuffing mix </tspan><tspan class="ingredient" x="20" dy="14"><tspan class="bullet">&#x2611;</tspan> 1 cup chicken stock or amount recommended for stuffing mix </tspan></text><text x="290" y="222" class="ingredients_title" text-anchor="middle">Instructions</text><text y="234"><tspan class="ingredient" x="20" dy="14"><tspan class="bullet">&#x2611;</tspan> On stove top add chicken stock to the pot. </tspan><tspan class="ingredient" x="20" dy="14"><tspan class="bullet">&#x2611;</tspan> Once stock is hot, add the stuffing mix, butter and mix vigorously. </tspan><tspan class="ingredient" x="20" dy="14"><tspan class="bullet">&#x2611;</tspan> Cook for another 1-2 minutes and turn off the stove. </tspan><tspan class="ingredient" x="20" dy="14"><tspan class="bullet">&#x2611;</tspan> Place the stuffing in a serving dish and cover to retain heat. </tspan></text></svg>

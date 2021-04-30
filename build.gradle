@@ -1,0 +1,57 @@
+buildscript {
+    ext.kotlin_version = '1.4.32' // Required for Kotlin integration
+    ext.spring_boot_version = '2.4.5'
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // Required for Kotlin integration
+        classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version" // See https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$spring_boot_version"
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE"
+    }
+
+}
+
+apply plugin: 'kotlin' // Required for Kotlin integration
+apply plugin: "kotlin-spring" // https://kotlinlang.org/docs/reference/compiler-plugins.html#spring-support
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+sourceCompatibility = '1.8'
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version" // Required for Kotlin integration
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "net.sourceforge.plantuml:plantuml:1.2021.5"
+    compile "org.asciidoctor:asciidoctorj:2.5.0"
+    // https://mvnrepository.com/artifact/org.asciidoctor/asciidoctorj-pdf
+    compile group: 'org.asciidoctor', name: 'asciidoctorj-pdf', version: '1.5.4'
+// https://mvnrepository.com/artifact/org.asciidoctor/asciidoctorj-diagram
+    compile group: 'org.asciidoctor', name: 'asciidoctorj-diagram', version: '2.1.2'
+// https://mvnrepository.com/artifact/org.asciidoctor/asciidoctorj-epub3
+    compile group: 'org.asciidoctor', name: 'asciidoctorj-epub3', version: '1.5.0-alpha.19'
+// https://mvnrepository.com/artifact/commons-io/commons-io
+    compile group: 'commons-io', name: 'commons-io', version: '2.8.0'
+    compile 'eu.maxschuster:dataurl:2.0.0'
+
+    compile 'group': 'org.jetbrains.kotlin', 'name': 'kotlin-scripting-jvm'
+    compile 'group': 'org.jetbrains.kotlin', 'name': 'kotlin-scripting-jvm-host'
+    compile 'com.fasterxml.jackson.module:jackson-module-kotlin'
+
+    // https://mvnrepository.com/artifact/junit/junit
+    testCompile group: 'junit', name: 'junit', version: '4.13.1'
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
